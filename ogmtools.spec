@@ -2,11 +2,12 @@ Summary:	Programs to handle audio and video in ogg stream
 Summary(pl):	Programy do obs³ugi audio i video w strumieniu ogg
 Name:		ogmtools
 Version:	0.954
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications
 Source0:	http://www.bunkus.org/videotools/%{name}/%{name}-%{version}.tar.bz2
 URL:		http://www.bunkus.org/videotools/ogmtools/
+Patch0:		%{name}-alpha.patch
 BuildRequires:	libdvdread-devel
 BuildRequires:	libogg-devel
 BuildRequires:	libvorbis-devel
@@ -29,6 +30,7 @@ informacji o plikach OGM.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 ./autogen.sh
