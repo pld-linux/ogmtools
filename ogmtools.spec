@@ -1,7 +1,7 @@
 Summary:	Programs to handle audio and video in ogg stream
 Summary(pl):	Programy do obs³ugi audio i video w strumieniu ogg
 Name:		ogmtools
-Version:	0.9
+Version:	0.922
 Release:	1
 License:	GPL
 Group:		Applications
@@ -39,7 +39,6 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-install ogmsplit.pl $RPM_BUILD_ROOT/%{_bindir}/ogmsplit
 
 %clean
 rm -rf $RPM_BUILD_ROOT
