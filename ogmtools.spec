@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications
 Source0:	http://www.bunkus.org/videotools/%{name}/%{name}-%{version}.tar.bz2
+# Source0-md5:	8bdf7da6f6562cc5c4d1bcd89ada4c60
 URL:		http://www.bunkus.org/videotools/ogmtools/
 BuildRequires:	libdvdread-devel
 BuildRequires:	libogg-devel
