@@ -1,5 +1,5 @@
-Summary:	Programs to handle audio and video in ogg stream
-Summary(pl):	Programy do obs³ugi audio i video w strumieniu ogg
+Summary:	Programs to handle audio and video in Ogg stream
+Summary(pl):	Programy do obs³ugi audio i video w strumieniu Ogg
 Name:		ogmtools
 Version:	1.4.1
 Release:	1
