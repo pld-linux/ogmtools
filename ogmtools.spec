@@ -8,6 +8,8 @@ Group:		Applications
 Source0:	http://www.bunkus.org/videotools/%{name}/%{name}-%{version}.tar.bz2
 # Source0-md5:	de388183e521702cc8c8891b234bd26b
 URL:		http://www.bunkus.org/videotools/ogmtools/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	libdvdread-devel
 BuildRequires:	libogg-devel
 BuildRequires:	libvorbis-devel
