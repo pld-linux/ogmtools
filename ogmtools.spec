@@ -1,50 +1,27 @@
-Summary:	-
-Summary(pl):	-
-Name:		-
-Version:	-
-Release:	-
-Epoch:		-
-License:	- (enter GPL/LGPL/BSD/BSD-like/other license name here)
-Group:		-
-Vendor:		-
-Icon:		-
-Source0:	%{name}-%{version}.tar.gz
-Source1:	-
-Patch0:		-
-URL:		-
-BuildRequires:	-
-PreReq:		-
-Requires:	-
-Requires(pre,post):	-
-Requires(preun):	-
-Requires(postun):	-
-Provides:	-
-Obsoletes:	-
-Conflicts:	-
+Summary:	Programs to handle audio and video in ogg stream
+Summary(pl):	Programy do obs³ugi audio i video w strumieniu ogg
+Name:		ogmtools
+Version:	0.8
+Release:	0
+License:	GPL
+Group:		Applications
+Source0:	http://www.bunkus.org/videotools/%{name}/%{name}-%{version}.tar.bz2
+URL:		http://www.bunkus.org/videotools/ogmtools/
+BuildRequires:	transcode-avilib
+BuildRequires:	libogg-devel
+BuildRequires:	libvorbis-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 
 %description -l pl
 
-%package subpackage
-Summary:	-
-Summary(pl):	-
-Group:		-
-
-%description subpackage
-
-%description subpackage -l pl
-
 %prep
-%setup -q -n %{name}-%{version}.orig -a 1
-%patch0 -p1
+%setup -q
 
 %build
-aclocal
-%{__autoconf}
-autoheader
-%{__automake}
+
+./autogen.sh
 %configure
 %{__make}
 
@@ -57,21 +34,7 @@ install -d $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%pre
-
-%preun
-
-%post
-
-%postun
-
 %files
 %defattr(644,root,root,755)
-%doc README ChangeLog
+%doc README ChangeLog TODO
 %attr(755,root,root) %{_bindir}/*
-%{_datadir}/%{name}
-
-%files subpackage
-%defattr(644,root,root,755)
-%doc extras/*.gz
-%{_datadir}/%{name}-ext
