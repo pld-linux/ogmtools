@@ -9,6 +9,7 @@ Source0:	http://www.bunkus.org/videotools/%{name}/%{name}-%{version}.tar.bz2
 URL:		http://www.bunkus.org/videotools/ogmtools/
 BuildRequires:	libogg-devel
 BuildRequires:	libvorbis-devel
+BuildRequires:	libdvdread-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
