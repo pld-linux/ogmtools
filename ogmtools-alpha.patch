@@ -1,0 +1,11 @@
+--- ogmtools-0.954/r_avi.cpp~	Fri Oct 25 15:17:00 2002
++++ ogmtools-0.954/r_avi.cpp	Fri Oct 25 15:17:00 2002
+@@ -36,7 +36,7 @@
+ #include <dmalloc.h>
+ #endif
+ 
+-int avi_reader_c::probe_file(FILE *file, unsigned long long size) {
++int avi_reader_c::probe_file(FILE *file, u_int64_t size) {
+   char data[12];
+   
+   if (size < 12)
