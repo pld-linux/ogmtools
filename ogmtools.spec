@@ -1,5 +1,5 @@
 Summary:	Programs to handle audio and video in Ogg stream
-Summary(pl):	Programy do obs³ugi audio i video w strumieniu Ogg
+Summary(pl.UTF-8):   Programy do obsÅ‚ugi audio i video w strumieniu Ogg
 Name:		ogmtools
 Version:	1.5
 Release:	1
@@ -23,11 +23,11 @@ DivX3, DivX4, XviD etc) and several audio (usually Vorbis) and
 subtitle streams. ogmtools allow creation and extraction, as well as
 provide information about such files.
 
-%description -l pl
+%description -l pl.UTF-8
 OGM (Ogg Media) to format video stworzony pod systemem Windows. Jest
-to zwyk³y strumieñ Ogg w którym enkapsulowane s± strumienie video
+to zwykÅ‚y strumieÅ„ Ogg w ktÃ³rym enkapsulowane sÄ… strumienie video
 identyczne z tymi w plikach AVI (DivX3, DivX4, XviD etc) oraz kilka
-strumieni audio (zwykle Vorbis) i tekstowych, zawieraj±cych napisy do
+strumieni audio (zwykle Vorbis) i tekstowych, zawierajÄ…cych napisy do
 filmu. ogmtools pozwala na tworzenie, rozbieranie i uzyskiwanie
 informacji o plikach OGM.
 
