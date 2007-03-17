@@ -7,6 +7,7 @@ License:	GPL
 Group:		Applications
 Source0:	http://www.bunkus.org/videotools/%{name}/%{name}-%{version}.tar.bz2
 # Source0-md5:	02d356e3d21d53b1d9715bab223d8996
+Patch0:		%{name}-acam.patch
 URL:		http://www.bunkus.org/videotools/ogmtools/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -33,6 +34,7 @@ informacji o plikach OGM.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 rm -rf autom4te.cache
