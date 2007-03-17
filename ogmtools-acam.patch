@@ -1,0 +1,20 @@
+--- ogmtools-1.5/configure.in.orig	2007-03-17 21:08:21.000000000 +0000
++++ ogmtools-1.5/configure.in	2007-03-17 21:09:07.000000000 +0000
+@@ -31,7 +31,4 @@
+ dnl Check for headers
+ AC_HEADER_STDC()
+ 
+-CFLAGS="-Wall -Wno-sign-compare @OGG_CFLAGS@ @VORBIS_CFLAGS@ @AVILIB_CFLAGS@ @DEBUG_CFLAGS@ @PROFILING_CFLAGS@"
+-CXXFLAGS="-Wall -Wno-sign-compare @OGG_CFLAGS@ @VORBIS_CFLAGS@ @AVILIB_CFLAGS@ @DEBUG_CFLAGS@ @PROFILING_CFLAGS@"
+-
+ AC_OUTPUT(Makefile avilib/Makefile)
+--- ogmtools-1.5/Makefile.am.orig	2007-03-17 21:08:26.000000000 +0000
++++ ogmtools-1.5/Makefile.am	2007-03-17 21:15:29.000000000 +0000
+@@ -73,3 +73,7 @@
+ man_MANS=ogmsplit.1 ogminfo.1 ogmmerge.1 ogmdemux.1 ogmcat.1 $(DVDXCHAP_MAN)
+ 
+ EXTRA_DIST = $(man_MANS)
++
++CFLAGS = -Wall -Wno-sign-compare @OGG_CFLAGS@ @VORBIS_CFLAGS@ @AVILIB_CFLAGS@ @DEBUG_CFLAGS@ @PROFILING_CFLAGS@
++CXXFLAGS = -Wall -Wno-sign-compare @OGG_CFLAGS@ @VORBIS_CFLAGS@ @AVILIB_CFLAGS@ @DEBUG_CFLAGS@ @PROFILING_CFLAGS@
++
