@@ -2,7 +2,7 @@ Summary:	Programs to handle audio and video in Ogg stream
 Summary(pl.UTF-8):	Programy do obsługi audio i video w strumieniu Ogg
 Name:		ogmtools
 Version:	1.5
-Release:	4
+Release:	5
 License:	GPL
 Group:		Applications
 Source0:	http://www.bunkus.org/videotools/%{name}/%{name}-%{version}.tar.bz2
